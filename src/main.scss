@@ -1,22 +1,105 @@
+$spacing: 8px;
+$he4rt-color: #9b59b6;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
 * {
     box-sizing: border-box;
+    //font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 body {
-    height: 100vh;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(240deg, $he4rt-color, #6855c2);
 }
 
-.main {
-    height: 100%;
-    background-color: #333;
+.container {
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    background-color: white;
+}
+
+.logo-container {
+    background: linear-gradient(80deg, $he4rt-color, #6855c2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
+    padding: #{$spacing * 2};
+}
+
+.icon {
+    width: 50%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-container {
+    padding: #{$spacing * 4};
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: left;
+    color: #696969;
+}
+
+.input-container {
+    max-width: 300px;
+    width: 100%;
+    margin: #{$spacing * 1.5} auto;
+}
+
+.button-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: $spacing;
+}
 
-    & > h1 {
-        margin: 0;
-    }
+button {
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    background: linear-gradient(145deg, $he4rt-color, #6855c2);
+    border: none;
+    outline: none;
+    color: white;
+    padding: #{$spacing * 2} #{$spacing * 2.5};
+    border-radius: $spacing;
+    max-width: 300px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.result {
+    margin: auto auto #{$spacing * 4};
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1.25px;
 }
