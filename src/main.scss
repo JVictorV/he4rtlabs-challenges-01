@@ -30,6 +30,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 5fr;
     background-color: white;
+    max-width: 1200px;
 }
 
 .logo-container {
