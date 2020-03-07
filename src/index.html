@@ -16,11 +16,11 @@
                 />
                 <div class="title">Calculadora de Freelance</div>
             </div>
-            <form id="form" class="form-container">
+            <div class="form-container">
                 <div class="input-container">
                     <label>
                         Tempo diário investido no projeto
-                        <input id="totalTime" type="number" />
+                        <input id="hoursPerDay" type="number" />
                     </label>
                 </div>
                 <div class="input-container">
@@ -42,10 +42,10 @@
                     </label>
                 </div>
                 <div class="button-container">
-                    <button>Calcular</button>
+                    <button id="submit">Calcular</button>
                 </div>
-                <div class="result">R$85/h</div>
-            </form>
+                <div class="result" id="result"></div>
+            </div>
         </div>
         <script src="./main.js"></script>
     </body>
