@@ -39,6 +39,12 @@ body {
     align-items: center;
     color: white;
     padding: #{$spacing * 2};
+
+    &-footer {
+        margin-top: auto;
+        flex-direction: column;
+        color: white;
+    }
 }
 
 .icon {
@@ -110,9 +116,23 @@ button {
     letter-spacing: 1.25px;
 }
 
+.social-media {
+    display: flex;
+    text-decoration: none;
+    color: white;
+
+    &-icon {
+        margin-right: $spacing;
+    }
+}
+
 @media (max-width: 600px) {
     .container {
         grid-template-columns: 1fr;
         height: 100%;
+    }
+
+    .logo-container-footer {
+        margin-top: #{$spacing * 2};
     }
 }
